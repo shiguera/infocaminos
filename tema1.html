@@ -78,6 +78,179 @@
                   <img  style="background:none;box-shadow:none; margin-left: 20px" SRC="images/hexa2.jpg" width=450 border="0">
                 </section>
 
+                <section>
+                    <h2>Esquema de un ordenador</h2>
+                    <div>
+                        <img style='' src='images/raspberry2.jpg' width='400'>
+                        <img style='margin-left:20' src='images/raspberrypi.png' width='400'>
+                    </div>
+                    <center><img style='' src='images/raspberryPiLogo.png' width='100'></center>
+                    <a href="http://www.raspberrypi.org">http://www.raspberrypi.org</a>
+
+                </section>
+                <section>
+                    <h2>Sistemas operativos para PC</h2>
+                    <table>
+                        <tr>
+                            <td><small><a href="http://es.wikipedia.org/wiki/Microsoft_Windows">Microsoft Windows</a></small></td>
+                            <td><small><a href="http://es.wikipedia.org/wiki/Mac_OS">Mac OS</a></small></td>
+                            <td><small><a href="http://es.wikipedia.org/?title=GNU/Linux">Linux</a></small></td>
+                            <td><small><a href="http://es.wikipedia.org/wiki/Sistema_operativo#Ejemplos_de_sistemas_operativos_para_PC">Otros</a></small></td>
+                        </tr>
+                        <tr>
+                            <td><img style='' src='images/windows.jpg' height='200'></td>
+                            <td><img style='' src='images/macos.jpg' height='200'></td>
+                            <td><img style='' src='images/linux.jpg' height='200'></td>
+                            <td><img style='' src='images/freebsd.png' height='200' width='200'></td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h2>Estructuras de directorios (I)</h2>
+                    <p>La organización de las unidades de almacenamiento (discos, usb,...) se hace mediante una estructura de arbol de nodos:</p>
+                    <ul>
+                        <li>Cada nodo puede ser <em>carpeta</em> (rama) o <em>fichero</em> (hoja)</li>
+                        <li>Los nodos de tipo 'carpeta' pueden contener otros nodos</li>
+                        <li>Existe un nodo raiz que es del tipo 'carpeta'</li>
+                        <li>Todos los nodos, excepto el raiz, tienen un único nodo 'padre', que es la carpeta dentro de la que se encuentran</li>
+                    </ul>
+                    <img style='' src='images/arbol.png' width='350'>
+                </section>
+                <section>
+                    <h2>Estructuras de directorios (II)</h2>
+                    <p>En Windows la función de directorio raiz la hace la letra de la unidad de disco, por ejemplo <em>C</em> o <em>F</em>. A esta letra se le añaden ':' y la barra invertida '\':</p>
+                    <pre><code>C:\</code></pre>
+                    <p>En linux el directorio raiz se denota por la barra de dividir <em>'/'</em>. No existe el concepto de <em>unidad</em></p>
+                    <pre><code>/</code></pre>
+                </section>                    
+                <section>
+                    <h2>Nombres de archivos y carpetas</h2>
+                    <p>Cada archivo o carpeta de un disco tiene un nombre, que no puede estar repetido dentro de la misma carpeta</p>
+                    <p>Suelen acabar en un punto '.' seguido de la denominada <strong>extensión</strong>, que son unas letras que indican el tipo de fichero del que se trata.</p>
+                    <pre><code>MiFichero.txt</code></pre>
+                    <p>Windows no hace distinción de mayúscula o minúsculas en los nombres de ficheros, linux sí</p>
+                </section>
+                <section>
+                    <h2>Ruta (path)</h2>
+                    <p>Cada archivo o carpeta se puede referenciar mediante su <em>'ruta'</em> o <em>'path'</em>. Cada ruta consta de la lista de carpetas desde la carpeta raiz hasta la del fichero, más el nombre del propio fichero:</p>
+                    <pre><code>C:\Documents\MiFichero.txt</code></pre>
+                    <p>Los nombres de las distintas carpetas de la ruta se separan con la barra invertida '<strong>\</strong>' en windows y con la barra de dividir '<strong>/</strong>' en linux </p>
+                    <pre><code>/users/shiguera/MiFichero.txt</code></pre>
+                </section>
+
+                <section>
+                    <h2>La consola o terminal</h2>
+                    <img style='' src='images/consola.png' width='300'>
+                    <p>Funciona en modo petición-respuesta: Tecleamos algo y al pulsar <em>INTRO</em> el ordenador procesa el comando y muestra el resultado</p>
+                    <p>Suele mostrar en el <em>prompt</em> la <strong>ruta actual</strong> de la carpeta en la que nos encontramos</p>
+                    <p>Para moverse entre los distintos directorios o carpetas se utiliza el comando <em>CD</em>, '<em>Change Directory</em>'.
+                    <pre><code>cd C:\Users\shiguera</code></pre>
+
+                </section>
+
+                <section>
+                    <h2>Instalación de Octave-UPM</h2>
+                    <img style='' src='images/octaveupminst.png' width='1000'>
+                    <a href="http://mat.caminos.upm.es/octave/">http://mat.caminos.upm.es/octave/</a> 
+                </section>
+                <section>
+                    <h2>Octave UPM GUI</h2>
+                    <img style='' src='images/octaveupmgui.png' width='800'>
+                </section>
+                <section>
+                    <h2>Instalación de Octave 3.8</h2>
+                    <div>
+                        <img style='float: left; margin-right: 20px' src='images/octavedownload.png' width='350'>
+                        <p>La nueva versión de Octave tiene algunas mejoras respecto de la utilizada en Octave UPM.</p>
+                        <p>La versión para windows se puede descargar desde la dirección:<br/>
+                        <a href='http://mxeoctave.osuv.de/' target='_blank'>http://mxeoctave.osuv.de/</a></p>
+                        <p>Es interesante la versión <em>portable</em>, que se puede copiar en un USB y ejecutar directamente, no requiere instalación</p>
+                    </div>
+                </section>
+                <section>
+                    <h2>El directorio <em>doc</em> de Octave</h2>
+                    <p>Contiene documentación de Octave en formato <em>pdf</em> y en formato <em>html</em></p>
+                    <p>En la versión 3.8 portable se encuentra en la ruta <em>share\doc\octave</em> y en la versión UPM está en la ruta <em>doc\octave</em></p>
+                    <p>En la versión UPM hay un documento <em>refcard-a4.pdf</em> que es una chuleta de Octave interesante</p>
+                </section>
+                <section>
+                    <h2>El directorio <em>bin</em> de Octave</h2>
+                    <img style='' src='images/octavedir.png' width='500'>
+                    <p>En el directorio '<em>bin</em>' de la instalación de <em>Octave</em> es donde se encuentran los programas que se ejecutan:</p>
+                    <ul>
+                        <li><strong>octave.exe:</strong> Arranca la consola de Octave (Salir: <em>exit</em>)</li>
+                        <li><strong>octave-gui.exe:</strong> Arranca el interface gráfico de Octave </li>
+                        <li><strong>gnuplot.exe:</strong> Arranca la consola de GNUPlot (Salir: <em>exit</em>)</li>
+                        <li><strong>octave-upm.exe:</strong> Arranca Octave UPM (versión UPM)</li>
+
+                    </ul>
+                </section>
+                <section>
+                    <h2>Cambiar el <em>path</em></h2>
+                    <p>Cuando ejecutamos un comando en la consola, el sistema operativo busca el comando en el directorio actual y en todos los directorios que figuren en la variable '<strong>path</strong>' del sistema</p>
+                    <p>Para ejecutar un programa que esté situado en un directorio determinado y evitar tener que teclear toda la <em>ruta</em> del programa, se añade el directorio del programa a la variable '<strong>path</strong>' del sistema.</p>
+                    <p>Hay que añadir la ruta del directorio '<strong>bin</strong>' de la instalación de <em>Octave</em> a la variable <em>path</em></p>
+                    <p>Se puede consultar la siguiente página:<br/>
+                    <a href='http://furniman.blogspot.com.es/2012/02/anadir-un-directorio-al-path-del.html' target='_blank'>http://furniman.blogspot.com.es/2012/02/anadir-un-directorio-al-path-del.html</a></p>
+                </section>
+
+                <section>
+                    <h2>Arrancar Octave</h2>
+                    <ul>
+                        <li><strong>Desde el explorador de ficheros:</strong> Hay que abrir el directorio <em>bin</em> de la instalación de <em>Octave</em> y ejecutar el programa <strong>octave.exe</strong> [1]</li>
+                        <li><strong>Desde la consola:</strong> Situados en el directorio <em>bin</em> de <em>Octave</em> teclearemos <em>'octave'</em> y la tecla <em>intro</em> [2]</li>
+                    </ul>
+                    <ul>
+                        <li><strong>[1]</strong> el explorador de archivos de windows suele tener activada una opción que oculta la extensión de los archivos en los listados. Conviene desactivar esta opción. Se puede consultar: <a href="http://windows.microsoft.com/es-es/windows/show-hide-file-name-extensions#show-hide-file-name-extensions=windows-7" target='_blank'>Mostrar u ocultar extensiones de nombre de archivo</a></li>
+                        <li><strong>[2]</strong> Si hemos añadido el directorio <em>'bin'</em> de Octave al <em>'path'</em> del sistema, podremos arrancar tecleando <em>'octave'</em> desde cualquier directorio.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Octave GUI</h2>
+                    <p><em>GUI</em> es el acrónimo de <em>Grafic User Interface</em>, Interface Gráfico de Usuario. Se refiere al interface de ventanas a través del que se interactúa con los progrramas</p>
+                    <p>Las últimas versiones de Octave incorporan un <em>Interface Gráfico de Usuario</em>, todavía en fase experimental.</p>
+                    <p>Para forzar el arranque de Octave a través del GUI podemos teclear desde la consola:</p>
+                    <pre><code>octave --force-gui</code></pre>
+                    <p>También podemos ejecutar el programa <em>octave-gui.exe</em></p>
+                    <p><strong>Nota:</strong> Estas últimas opciones no funcionan en la versión Octave UPM</p>
+                </section>
+                <section>
+                    <h2>Octave GUI</h2>
+                    <img style='' src='images/octavegui.png' width='800'>
+                </section>
+                <section>
+                    <h2>Editores Vs Procesadores</h2>
+                    <p>Para escribir el código de los programas se utilizan <strong>editores de texto</strong>. Los <em>procesadores de texto</em> del tipo de word, libre office u otros no sirven, pues insertan caracteres especiales</p>
+                    <p>Los editores de texto ofrecen ayudas a la escritura de programas, por ejemplo resaltado de sintáxis, corrección de bugs, formateado de código y otras</p>
+                    <center><table>
+                        <tr>
+                            <td><img style='' src='images/sublime.png' height='250'></td>
+                            <td><img style='' src='images/notepad.png' height='250'></td>
+                            <td><img style='' src='images/vim.gif' height='70'></td>
+                        </tr>
+                    </table></center>
+                </section>  
+
+                <section>
+                    <h2>Octave Editor</h2>
+                    <p>Octave incorpora <em>Notepad++</em> como editor. Para editar un fichero <em>mifichero.m</em>, desde la consola de <em>Octave</em> teclearemos:</p>
+                    <pre><code>edit mifichero.m</code></pre> 
+                    <p>Se abrirá la ventana de edición de <em>Notepad++</em>.</p>
+                    <p><strong>Nota:</strong> Podemos utilizar el <em>Notepad++</em> desde fuera de Octave. El programa se encuentra en la carpeta <em>'notepad++'</em> de la instalación de Octave. El fichero ejecutable que arranca el <em>Notepad++</em> es <em>notepad++.exe</em></p>
+                </section>
+
+                <section>
+                    <h2>Octave Android</h2>
+                    <p>La versión de Octave para Android desarrollada por Corbin Champion funciona bien en tablets y smartphones.</p>
+                    <p>No tiene GUI, ofrece la consola de Octave. Sí tiene gráficos</p>
+                    <p>Hay que descargarse tres paquetes desde la <em>Google play</em>: </p>
+                    <ul>
+                        <li>Octave Main Package</li>
+                        <li>Octave Gnuplot Package</li>
+                        <li>Octave</li>
+                    </ul>
+                    <center><img style='' src='images/octaveandroid2.png' height='250'></center>
+                </section>
 
                 <!-- CIERRE -->
                     <section>
