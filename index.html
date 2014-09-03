@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Informática Grupo F</title>
+
+        <meta name="description" content="Presentación de la asignatura Informática Caminos, Grupo F">
+        <meta name="author" content="Santiago Higuera">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="reveal/css/reveal.min.css">
+        <link rel="stylesheet" href="stylesheets/sky_osgeo_yellow.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+        <style type="text/css">
+            .negrita {font-weight: bold;}
+        </style>
+    </head>
+
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                   <!-- PORTADA -->
+                <section>
+                    <img  style="background:none;box-shadow:none;" SRC="images/portada.png" width=900 border="0">
+                </section>
+                <section>
+                     <table HEIGHT="75" WIDTH="95%" >
+                       <tr> 
+                         <td height=90 width=90>  
+                           <table>
+                             <tr>
+                               <td height=90 width=90> <a href="http://www.caminos.upm.es/index.html"><img  style="background:none;box-shadow:none;" SRC="images/escudo_OP.jpg" height=90 width=90 border="0"></a>
+                                 </td>
+                             </tr>
+                           </table>
+                         </td>
+                             
+                        <td height=90 width=110>  
+                           <table>
+                             <tr>
+                               <td height=90 width=90> 
+                                 </td>
+                             </tr>
+                           </table>
+                         </td>
+
+                         <td> 
+                           <table bgcolor="#FFFFFF" border bordercolor="#000000"  WIDTH="100%"> 
+                               <tr align="center"> 
+                                     <td align="center"> <br>
+                               <p  font face="Times New Roman,Times"> <h4> <b>Departamento de</font></b> <br>
+                               <b>Matem&aacute;tica e Inform&aacute;tica</font></b> <br>         
+                               <b>Aplicadas a la Ingenieria Civil.</b> </h4>
+                               </p>      
+                               <p font face="Arial,Helvetica"><font size=2>E.T.S.I. CAMINOS, CANALES
+                                 Y PUERTOS.</font> <br>
+                                 <font face="Arial,Helvetica"><font size=2>Universidad Polit&eacute;cnica
+                                   de Madrid.</font> </center> 
+                                 </p>
+                               </td>
+                                     </tr> 
+                             </table>
+                         </td>
+                         <td height=90 width=110>  
+                           <table>
+                             <tr>
+                               <td height=90 width=90> 
+                                 </td>
+                             </tr>
+                           </table>
+                         </td>           
+                                 
+                                 
+                         <td height=90 width=90>
+                           <table > 
+                             <tr>
+                                     <td height=90 width=90> 
+                              <a href="http://www.upm.es"><img style="background:none;box-shadow:none;" SRC="images/escudo_UPM.jpg" height=90 width=90 border="0" ></a> 
+                             </td>
+                                     </tr>
+                           </table>
+                         </td>
+                      </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Generalidades</h2>
+                    <p>Estudios de Grado en Ingeniería Civil y Territorial</p>
+                    <p>Asignatura: <a href="http://goo.gl/tCmHjj" target='_ blank'>Informática</a> (6 créditos) (Primer semestre)</p>
+                    <p>Departamento: Matemática e Informática Aplicadas a la Ingeniería Civil y Oceánica</p>
+                    <p>Director del departamento: Manuel Pastor Pérez</p>
+                    <p>Secretaria del departamento y responsable de la asignatura 'Informática': Sagrario Lantarón Sánchez</p>
+                </section>
+                <section>
+                    <h2>Grupo F</h2>
+                    <ul>
+                        <li>Profesor: Santiago Higuera de Frutos</li>
+                        <li>4 clases de 75 minutos semanales</li>
+                        <li>Jueves y viernes de 11:30 a 12:45 y de 13:00 a 14:15</li>
+                            <ul>
+                                <li>2 clase teórico-prácticas en aula</li>
+                                <li>2 clase prácticas en aula con ordenadores (Se puede traer portátil)</li>
+                            </ul>
+                        <li>Horario tutorías: Jueves y viernes de 9:45 a 11:15</li>
+                        <li>Despacho: 2ª planta de la torre</li>
+                        <li>eMail: santiago.higuera@upm.es</li>
+                        <li>twitter: <a href='https://twitter.com/santiagohiguera' target='_blank'>@santiagohiguera</a></li>
+                    </ul>
+                    
+                </section>
+                <section>
+                    <h2>Pruebas de evaluación</h2>
+                    <h3>Evaluación continua</h3>
+                    <ul>
+                        <li>Hoja de ejercicios de evaluación continua (moodle)</li>
+                        <li><strong>Evaluación continua - 30 % :</strong> Se realizarán una serie de pruebas a lo largo del curso de ejercicios similares a los de la hoja. Algunas de las pruebas se realizarán en ordenador.</li>
+                        <li><strong>Exámenes parciales - 35 % + 35 %:</strong> Se realizarán dos exámenes parciales, en octubre y en diciembre. Algunos de los ejercicios se realizarán en ordenador.</li>
+                        <li>La nota será la media de los ejercicios anteriores. Si la nota media es igual o superior a 5 y no se ha obtenido menos de 3 en ninguno de los examenes se obtendr'el aprobado y no será necesario acudir al examen final</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Pruebas de evaluación</h2>
+                    <h3>Examen final</h3>
+                    <ul>
+                        <li><strong>Examen final - 100 % :</strong> Los alumnos que no superen la evaluación continua dispondrán de un examen final de la asignatura.</li>
+                        <li>Constará de dos partes:</li>
+                        <ul>
+                            <li><strong>Examen escrito 70%</strong></li>
+                            <li><strong>Examen en ordenador 30%</strong></li>
+                        </ul>
+                        <li>Nota final: ponderación de las anteriores</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Contenido de la asignatura</h2>
+                    <p>Objetivo principal: conceptos de cálculo científico y programación para aplicar como herramienta durante los estudios y posteriormente (vida laboral)</p>
+                    <p></p>
+                    <p>Se aprenderá a utilizar el lenguaje '<em>m</em>', que es el lenguaje que incorporan tanto <a href='http://es.wikipedia.org/wiki/MATLAB' target='_blank'>Matlab</a> como <a href='http://es.wikipedia.org/wiki/GNU_Octave' target='_blank'>GNU Octave</a>.</p>
+                    <center><table>
+                        <tr><td><img src="images/Matlab_Logo.png" height='250' alt="roadrecorder"/></td>
+                        <td></td>
+                        <td><img src="images/octavelogo.png" height='250' alt="roadplayer"/></td>
+                        </tr>
+                        <tr>
+                            <td><center><a href="">Matlab</a></center></td>
+                        <td></td>
+                            <td><center><a href="">GNU Octave</a></center></td>
+                        </tr>
+                    </table>
+                </center>
+                </section>
+                <section>
+                    <h2>El lenguaje <em>m</em></h2>
+                    <ul>
+                        <li><em>m</em> es un lenguaje de programación, un conjunto de reglas para escribir programas de ordenador</li>
+                        <li>El lenguaje <em>m</em> fue creado en 1970 para proporcionar un sencillo acceso al software de matrices LINPACK y EISPACK sin tener que usar Fortran</li>
+                        <li><em>m</em> es un lenguaje de programación orientado al Cálculo Numérico</li>
+                        <li><em>m</em> es un lenguaje de programación para realizar programas pequeños y simples</li>
+                        <li>La utilización de <em>m</em> está muy extendida en el ámbito de la Ingeniería</li>
+                        <li><em>m</em> dispone de una extensa colección de librerías que cubren muchos ámbitos de la Ciencia e Ingeniería</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>MATLAB</h2>
+                    <p><a href="http://www.mathworks.es/products/matlab/" target='_blank'>http://www.mathworks.es/products/matlab/</a></p>
+                    <center><img src="images/matlab.png" height='350' alt="gnuoctave"/></center>
+                </section>
+                <section>
+                    <h2>MATLAB</h2>
+                    <ul>
+                        <li>MATLAB es un programa de cálculo numérico diseñado para trabajar con matrices (MATLAB = abreviatura de MATrix LABoratory)</li>
+                        <li>Fue creado por Cleve Moler en 1984</li>
+                        <li>Es un software propietario</li>
+                        <li>Está disponible para las plataformas Windows, Mac OS X y GNU/Linux</li>
+                        <li>Utiliza el lenguaje <em>m</em></li>
+                        <li>Herramientas adicionales:</li>
+                        <ul>
+                            <li>Simulink: plataforma de simulación multidominio</li>
+                            <li>GUIDE: editor de interfaces de usuario - GUI</li>
+                        </ul>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>GNU Octave</h2>
+                    <p><a href="http://www.gnu.org/software/octave/" target='_blank'>http://www.gnu.org/software/octave/</a></p>
+                    <center><img src="images/gnuoctave.png" height='350' alt="gnuoctave"/></center>
+                </section>
+                <section>
+                    <h2>GNU Octave</h2>
+                    <center><img src="images/gnu.png" height='80' alt="gnu"/></center>
+                    <ul>
+                        <li>GNU Octave es un programa de cálculo numérico </li>
+                        <li>Octave es un proyecto de software libre desarrollado por John W. Eaton y muchos otros.</li>
+                        <li>Está disponible para las plataformas Windows, Mac OS X y GNU/Linux</li>
+                        <li>Utiliza el lenguaje <em>m</em> compatible con MATLAB (No es compatible al 100%)</li>
+                        <li>Utiliza GNU Plot para proporcionar gráficos</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Recursos Octave</h3>
+                    <center>
+                        <table>
+                            <tr>
+                                <td><center><img src="images/octaveupm.png" width='300' alt="octaveupm"/></center></td>
+                                <td><center><img src="images/octaveforge.png" width='300' alt="octaveupm"/></center></td>
+                            </tr>
+                            <tr>
+                                <td><center><small><a href="http://mat.caminos.upm.es/octave/" target='_blank'>http://mat.caminos.upm.es/octave/</a></small><br/>Octave UPM</center></td>
+                                <td><center><small><a href="http://octave.sourceforge.net/" target='_blank'>http://octave.sourceforge.net/</a></small><br/>Octave Forge</center></td>
+                            </tr>
+                            <tr>
+                                <td><center><img src="images/octaveonline.png" width='300' alt="octaveonline"/></center></td>
+                                <td><center><img src="images/octaveandroid.png" width='300' alt="octaveupm"/></center></td>
+                            </tr>
+                            <tr>
+                                <td><center><small><a href="http://www.online-utility.org/math/math_calculator.jsp" target='_blank'>http://www.online-utility.org/math/math_calculator.jsp</a></small><br/>Octave WEB</center></td>
+                                <td><center><small><a href="https://play.google.com/store/apps/details?id=com.octave&hl=es" target='_blank'>https://play.google.com/store/apps/details?id=com.octave&hl=es</a></small><br/>Octave Android</center></td>
+                            </tr>
+
+                        </table>
+                    </center>
+                    <ul>
+                        <li></li>
+                        <li><a href="http://www.online-utility.org/math/math_calculator.jsp" target='_blank'>Matemáticas en Ingeniería con Matlab y Octave</a></li>
+
+
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Instalación de Octave UPM</h3>
+                    <ul>
+                        <li>Seguir las instrucciones de <small><a href="http://mat.caminos.upm.es/octave/" target='_blank'>http://mat.caminos.upm.es/octave/</a></small></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Recursos en la red</h2>
+                    <p>El moodle de la asignatura dispone de numeroso material de aprendizaje, incluyendo manuales, ejercicios, vídeos, etc</p>
+                    <p>En la red se encuentra mucho material. Son de interés los siguientes enlaces:</p>
+                    <ul>
+                        <li>Documentación de Octave: <a href="http://octave.sourceforge.net/docs.html" target='_blank'>http://octave.sourceforge.net/docs.html</a></li>
+                        <li>Documentación de Matlab: <a href="http://www.mathworks.es/es/help/matlab/index.html" target='_blank'>http://www.mathworks.es/es/help/matlab/index.html</a></li>
+                        <li>Manual de Octave: <a href="http://softlibre.unizar.es/manuales/aplicaciones/octave/manual_octave.pdf" target='_blank'>http://softlibre.unizar.es/manuales/aplicaciones/octave/manual_octave.pdf</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Libros</h2>
+                    <img style='' width="250" src="images/matlabbook1.jpg" alt="matlabbook1">
+                    <p>Autores: Sagrario Lantarón y Bernardo Llanas</p>
+                    <p>Es el libro de referencia para la asignatura</p>
+                    <p>Disponible en la biblioteca</p>
+                </section>
+
+                <section>
+                    <h2>Libros Octave</h2>
+                    <img style='' width="850" src="images/octavebooks.png" alt="octavebooks">
+                </section>
+
+                <section>
+                    <h2>moodle de la UPM</h2>
+                    <h3><a href="https://moodle.upm.es">https://moodle.upm.es</a></h3>
+                    <p><strong>Importante:</strong>Tener cuenta de correo <em>@alumnos.upm.es</em></p>
+                    <center>
+                        <img style='' width="350" src="images/moodle1.png" alt="moodle1">
+                        <img style='margin-left: 20px' width="350" src="images/moodle2.png" alt="moodle2">
+                    </center>
+                    <br>
+                </section>
+                <section>
+                    <h2></h2>
+                    <p></p>
+                </section>
+
+                <!-- CIERRE -->
+                    <section>
+                        <h2>Gracias por su atención</h2>
+                        <br/><br/>
+                        <h5>Santiago Higuera de Frutos</h5>
+                        <a href=''>@santiagohiguera</a><br/>
+                        <br/><br/>
+                        <p><small>El código fuente de la presentación se puede consultar en Github:<br/>
+                        <center><a href="https://github.com/shiguera/infocaminos">https://github.com/shiguera/infocaminos</a></center></small></p>
+
+                    </section>
+
+                    <section>
+                        <h2>THE END</h2>
+                    </section>
+            </div>
+
+        </div>
+
+        <script src="reveal/lib/js/head.min.js"></script>
+        <script src="reveal/js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Parallax scrolling
+                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+                // parallaxBackgroundSize: '2100px 900px',
+            });
+
+            Reveal.initialize({
+
+                // Display controls in the bottom right corner
+                controls: true,
+                // Display a presentation progress bar
+                progress: true,
+                // Display the page number of the current slide
+                slideNumber: true,
+                // Push each slide change to the browser history
+                history: true,
+                // Enable keyboard shortcuts for navigation
+                keyboard: true,
+                // Enable the slide overview mode
+                overview: true,
+                // Vertical centering of slides
+                center: true,
+                // Enables touch navigation on devices with touch input
+                touch: true,
+                // Loop the presentation
+                loop: false,
+                // Change the presentation direction to be RTL
+                rtl: false,
+                // Turns fragments on and off globally
+                fragments: true,
+                // Flags if the presentation is running in an embedded mode,
+                // i.e. contained within a limited portion of the screen
+                embedded: false,
+                // Number of milliseconds between automatically proceeding to the
+                // next slide, disabled when set to 0, this value can be overwritten
+                // by using a data-autoslide attribute on your slides
+                //autoSlide: 15000,
+                // Stop auto-sliding after user input
+                autoSlideStoppable: true,
+                // Enable slide navigation via mouse wheel
+                mouseWheel: false,
+                // Hides the address bar on mobile devices
+                hideAddressBar: true,
+                // Opens links in an iframe preview overlay
+                previewLinks: false,
+                // Transition style
+                transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+                // Transition speed
+                transitionSpeed: 'fast', // default/fast/slow
+                // Transition style for full page slide backgrounds
+                backgroundTransition: 'default', // default/none/slide/concave/convex/zoom
+                // Number of slides away from the current that are visible
+                viewDistance: 3,
+                // Parallax background image
+                parallaxBackgroundImage: '', //'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+                // Parallax background size
+                parallaxBackgroundSize: '', //'2100px 900px',
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    //{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    //{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    //{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+
+            });
+
+        </script>
+
+    </body>
+</html>
